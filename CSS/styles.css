@@ -1,11 +1,12 @@
 /*imports*/
 
 @font-face {
-    font-family: "my font";
+    font-family: "BebasNeue-Regula";
     src: url(../assets/BebasNeue-Regular.ttf);
 }
 
 /*reset*/
+
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +20,10 @@
     max-width: 1200px;
     margin: 0 auto;
     /*border: 2px solid yellow;*/
-    
+}
+
+body {
+    background-color: #080324;
 }
 
 /* header */
@@ -27,7 +31,6 @@
 header {
     height: 60px;
     background-color: #F9003D;
-
 }
 
 header .header-flex {
@@ -45,7 +48,7 @@ header nav {
 }
 
 header nav a {
-    font-family: "my font";
+    font-family: "BebasNeue-Regula";
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -70,11 +73,54 @@ main .banner {
     background-image: url(../assets/imagem-fundo-banner.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
-
 }
 
-main h1 {
+main .banner-flex {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    border: 3px solid white];
+}
+
+main .banner-flex #banner-info {
+    width: 560px;
+}
+
+main .banner-flex h1 {
+    margin-bottom: 40px;
+    font-family: "BebasNeue-Regula";
+    font-size: 96px;
     color: white;
-    font-family: "my font";
-    
+}
+
+main .banner-flex p {
+    margin-bottom: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 53px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #F9003D;
+}
+
+/* SOBRE */
+
+main .sobre h2 {
+    font-family:"BebasNeue-Regula";
+    font-size: 64px;
+    color: #F9003D;
+}
+
+main .sobre .linha {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .sobre .linha img {
+width: 490px;
+}
+
+main .sobre .linha .participantes {
+    width: 590px;
+
+    border: 2px solid yellow;
 }
