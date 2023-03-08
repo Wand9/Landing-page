@@ -11,12 +11,15 @@
 <body>
     <header>
         <div class="layout-grid header-flex">
-            <nav>
+            <nav id="navmenu">
                 <a href="">inicio</a>
                 <a href="">sobre</a>
                 <a href="">desafios</a>
                 <a href="">endereço</a>
             </nav>
+
+            <img src="assets/menu_FILL0_wght400_GRAD0_opsz48.svg" id="menu-mobile" alt="Abre o menu mobile" onclick="mostrarMenu()">
+            
         </div>
     </header>
     <main>
@@ -49,5 +52,11 @@
 
         </article>
     </main>
+    <footer>
+        <script>
+            function mostrarMenu() {
+                document.getElementById("navmenu").classList.toggle("mostrarMenu");
+            }
+        </script>
 </body>
 </html>
